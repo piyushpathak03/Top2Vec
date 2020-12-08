@@ -238,7 +238,7 @@ Returns:
   * ``doc_ids``: Unique ids of documents. If ids were not given, the index of document
     in the original corpus.
   
-For each of the returned documents we are going to print its content, score and document number.
+For each of returned documents we are going to print its content, score and document number.
 ```python
 documents, document_scores, document_ids = model.search_documents_by_topic(topic_num=48, num_docs=5)
 for doc, score, doc_id in zip(documents, document_scores, document_ids):
